@@ -1,0 +1,21 @@
+<h1>holaaa</h1>
+
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>  
+        <% @users.each do |user|%>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= user.email%></td>
+        
+    </tr>
+   </tbody>
+        <% end %>
+</table>

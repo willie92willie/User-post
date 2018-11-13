@@ -1,0 +1,8 @@
+<h1>  Vista new </h1>
+
+<%= form_for @post do |f|%>
+  <%= f.text_field :title, placeholder: "Crea un Post" %>
+  <%= f.text_field :Description, placeholder: "Crea una description" %>
+
+  <%= f.submit%>
+<%end%>

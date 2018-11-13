@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    belongs_to :author
+    has_many :posts, dependent: :destroy 
 end

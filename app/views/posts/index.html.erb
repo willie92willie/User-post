@@ -1,0 +1,22 @@
+<%= render partial: "layouts/navbar", locals: {titulo:  "Lista de Posts."} %>
+
+<table class="table text-center">
+  <thead>
+    <tr>
+      <th scope="col">User_Id</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>  
+        <% @posts.each do |post|%>
+            <td><%= post.user_id %></td>
+            <td><%= post.title %></td>
+            <td><%= post.description%></td>
+        
+    </tr>
+   </tbody>
+        <% end %>
+</table>
+
